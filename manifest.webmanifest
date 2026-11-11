@@ -1,0 +1,9 @@
+{
+  "name": "Little Beast",
+  "short_name": "Beast",
+  "start_url": "./",
+  "display": "standalone",
+  "background_color": "#211918",
+  "theme_color": "#241a19",
+  "description": "Seu monstrinho virtual caótico."
+}

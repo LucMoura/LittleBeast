@@ -1,0 +1,60 @@
+<!doctype html>
+<html lang="pt-BR">
+<head>
+  <meta charset="utf-8">
+  <meta name="viewport" content="width=device-width,initial-scale=1,viewport-fit=cover">
+  <meta name="theme-color" content="#241a19">
+  <meta name="description" content="Little Beast — seu monstrinho virtual.">
+  <link rel="manifest" href="manifest.webmanifest">
+  <link rel="stylesheet" href="style.css">
+  <title>Little Beast</title>
+</head>
+<body>
+  <main class="app">
+    <header class="topbar">
+      <div><p class="eyebrow">SEU COMPANHEIRO CAÓTICO</p><h1>Little Beast <span>★</span></h1></div>
+      <div class="clock"><span id="day-label">Dia 1</span><strong id="clock">12:00</strong></div>
+    </header>
+
+    <section class="room" aria-label="Quarto do Little Beast">
+      <div class="window"><div class="sky" id="sky"><span class="celestial"></span></div><div class="landscape"></div></div>
+      <div class="shelf"><span>▣</span><span>▤</span><span>▣</span></div>
+      <div class="poster">BEAST<br>MODE</div>
+      <div class="floor-line"></div>
+      <div class="rug"></div>
+      <div class="pet-wrap">
+        <div class="mood-bubble" id="mood-bubble">Grr!</div>
+        <canvas id="pet" width="96" height="96" aria-label="Little Beast, um monstrinho marrom"></canvas>
+        <div class="pet-shadow"></div>
+      </div>
+      <div class="food-bowl">♨<small>BEAST</small></div>
+      <div class="room-caption" id="room-caption">Ele está de olho em você...</div>
+    </section>
+
+    <section class="status-panel">
+      <div class="status-heading"><h2>Status</h2><span id="mood">Travesso</span></div>
+      <div class="meters">
+        <div class="meter"><label for="hunger">Fome</label><div class="track"><div id="hunger" class="fill hunger"></div></div><b id="hunger-value">78%</b></div>
+        <div class="meter"><label for="energy">Energia</label><div class="track"><div id="energy" class="fill energy"></div></div><b id="energy-value">86%</b></div>
+        <div class="meter"><label for="happiness">Alegria</label><div class="track"><div id="happiness" class="fill happiness"></div></div><b id="happiness-value">72%</b></div>
+        <div class="meter"><label for="affinity">Afinidade</label><div class="track"><div id="affinity" class="fill affinity"></div></div><b id="affinity-value">10%</b></div>
+      </div>
+    </section>
+
+    <section class="interaction">
+      <h2>Interagir</h2>
+      <div class="actions">
+        <button data-action="feed"><span>🍖</span>Alimentar</button>
+        <button data-action="play"><span>🎾</span>Brincar</button>
+        <button data-action="pet"><span>❤️</span>Carinho</button>
+        <button data-action="talk"><span>💬</span>Conversar</button>
+        <button data-action="sleep"><span>🌙</span>Descansar</button>
+      </div>
+    </section>
+
+    <section class="log-panel"><div class="log-title"><h2>Diário do monstrinho</h2><span>● AO VIVO</span></div><p id="dialogue" aria-live="polite">“Hrrr... quem é você? Tem comida?”</p></section>
+    <footer>Little Beast <span>•</span> protótipo 0.1 <span>•</span> progresso salvo neste dispositivo</footer>
+  </main>
+  <script src="app.js"></script>
+</body>
+</html>
